@@ -1,0 +1,15 @@
+Intent (create/execute/schedule/explore/ingest): ingest
+Use a custom framework folder? (y/n): n
+Enter profile name (or press Enter for default): parabank
+Paths (comma-separated files or dirs): D:\Thesis\playwright\tests
+2026-06-03 17:47:53,371 [INFO] agents.orchestrator: Orchestrator started – intent=Intent.INGEST
+2026-06-03 17:47:53,373 [INFO] agents.ingestion_agent: Ingestion agent started – paths=['D:\\Thesis\\playwright\\tests']
+Batches: 100%|| 1/1 [00:00<00:00,  2.70it/s]
+Batches: 100%|| 1/1 [00:00<00:00, 22.48it/s]
+Batches: 100%|| 1/1 [00:00<00:00, 26.20it/s]
+2026-06-03 17:47:54,973 [INFO] agents.ingestion_agent: Ingestion finished: Ingested 1 files, 2 chunks into knowledge base.
+
+===== RESULT =====
+Execution result: Ingested 1 files, 2 chunks into knowledge base.
+Total tokens: 19161
+Total cost: $0.2003

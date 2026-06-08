@@ -1,0 +1,36 @@
+{
+  "name": "parabank-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright test automation framework for Parabank application using Page Object Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:registration": "npx playwright test registration.spec.ts",
+    "test:login": "npx playwright test login.spec.ts",
+    "test:accounts": "npx playwright test accounts-overview.spec.ts",
+    "test:transfer": "npx playwright test transfer-funds.spec.ts",
+    "test:billpay": "npx playwright test bill-pay.spec.ts",
+    "test:logout": "npx playwright test logout.spec.ts",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "report": "npx playwright show-report",
+    "codegen": "npx playwright codegen https://parabank.parasoft.com"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "parabank",
+    "page-object-model"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0"
+  }
+}

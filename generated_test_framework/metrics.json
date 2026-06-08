@@ -1,0 +1,12 @@
+{
+  "llm.input_tokens": 372074,
+  "llm.output_tokens": 30108,
+  "llm.total_tokens": 402182,
+  "llm.cost_dollars": 1.5678,
+  "tests.created": 2,
+  "tests.executed": 1,
+  "coverage.checks": 1,
+  "ingestions.run": 1,
+  "rag.retrievals": 2,
+  "rag.hits": 2
+}

@@ -1,0 +1,103 @@
+Intent (create/execute/explore/ingest): explore
+Use a custom framework folder? (y/n): n
+Available profiles:
+  parabank: Parabank test suite
+  default: Default playground
+Enter profile name (or press Enter for default): parabank
+Enter requirement: Explore the Parabank site interactively
+Exploration mode (static/dynamic) [default: static]: dynamic
+URLs (comma-separated, * for wildcard): https://parabank.parasoft.com/
+Max depth (default 3): 1
+Generate user stories from exploration report? (y/n): y
+Calculate coverage after exploration? (y/n): y
+Save exploration results to knowledge base for future test creation? (y/n): y
+Require human review before applying changes? (y/n): n
+2026-06-03 21:58:33,164 [INFO] agents.orchestrator: Orchestrator started – intent=Intent.EXPLORE
+2026-06-03 21:58:33,166 [INFO] agents.interactive_explorer: Interactive exploration agent started (browsers: ['chromium'], compact mode)
+2026-06-03 21:58:37,556 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:58:37,579 [INFO] utils.cost_tracker: LLM call: 959 in / 132 out tokens, cost $0.00486
+2026-06-03 21:58:46,949 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:58:46,953 [INFO] utils.cost_tracker: LLM call: 1187 in / 100 out tokens, cost $0.00506
+2026-06-03 21:58:53,432 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:58:53,437 [INFO] utils.cost_tracker: LLM call: 1319 in / 106 out tokens, cost $0.00555
+2026-06-03 21:59:00,098 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:59:00,102 [INFO] utils.cost_tracker: LLM call: 1521 in / 78 out tokens, cost $0.00573
+2026-06-03 21:59:06,877 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:59:06,881 [INFO] utils.cost_tracker: LLM call: 1637 in / 86 out tokens, cost $0.00620
+2026-06-03 21:59:13,544 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:59:13,548 [INFO] utils.cost_tracker: LLM call: 1758 in / 68 out tokens, cost $0.00629
+2026-06-03 21:59:20,525 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:59:20,530 [INFO] utils.cost_tracker: LLM call: 1855 in / 68 out tokens, cost $0.00659
+2026-06-03 21:59:29,270 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:59:29,274 [INFO] utils.cost_tracker: LLM call: 1973 in / 68 out tokens, cost $0.00694
+2026-06-03 21:59:36,356 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:59:36,360 [INFO] utils.cost_tracker: LLM call: 2078 in / 83 out tokens, cost $0.00748
+2026-06-03 21:59:43,102 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:59:43,107 [INFO] utils.cost_tracker: LLM call: 2307 in / 80 out tokens, cost $0.00812
+2026-06-03 21:59:50,124 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:59:50,130 [INFO] utils.cost_tracker: LLM call: 2425 in / 82 out tokens, cost $0.00851
+2026-06-03 21:59:56,456 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 21:59:56,461 [INFO] utils.cost_tracker: LLM call: 2539 in / 68 out tokens, cost $0.00864
+2026-06-03 22:00:03,690 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:00:03,696 [INFO] utils.cost_tracker: LLM call: 2639 in / 82 out tokens, cost $0.00915
+2026-06-03 22:00:10,799 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:00:10,803 [INFO] utils.cost_tracker: LLM call: 2750 in / 82 out tokens, cost $0.00948
+2026-06-03 22:00:18,076 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:00:18,082 [INFO] utils.cost_tracker: LLM call: 2864 in / 86 out tokens, cost $0.00988
+2026-06-03 22:00:24,327 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:00:24,332 [INFO] utils.cost_tracker: LLM call: 2982 in / 76 out tokens, cost $0.01009
+2026-06-03 22:00:30,987 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:00:30,992 [INFO] utils.cost_tracker: LLM call: 3090 in / 84 out tokens, cost $0.01053
+2026-06-03 22:00:37,644 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:00:37,649 [INFO] utils.cost_tracker: LLM call: 3206 in / 70 out tokens, cost $0.01067
+2026-06-03 22:00:44,429 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:00:44,434 [INFO] utils.cost_tracker: LLM call: 3308 in / 68 out tokens, cost $0.01094
+2026-06-03 22:00:51,747 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:00:51,752 [INFO] utils.cost_tracker: LLM call: 3408 in / 70 out tokens, cost $0.01127
+2026-06-03 22:00:58,504 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:00:58,508 [INFO] utils.cost_tracker: LLM call: 3510 in / 70 out tokens, cost $0.01158
+2026-06-03 22:01:05,408 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:01:05,412 [INFO] utils.cost_tracker: LLM call: 3612 in / 83 out tokens, cost $0.01208
+2026-06-03 22:01:12,400 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:01:12,404 [INFO] utils.cost_tracker: LLM call: 3733 in / 77 out tokens, cost $0.01235
+2026-06-03 22:01:20,169 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:01:20,173 [INFO] utils.cost_tracker: LLM call: 3848 in / 76 out tokens, cost $0.01268
+2026-06-03 22:01:27,727 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:01:27,732 [INFO] utils.cost_tracker: LLM call: 3961 in / 76 out tokens, cost $0.01302
+2026-06-03 22:01:34,703 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:01:44,993 [INFO] utils.cost_tracker: LLM call: 4074 in / 78 out tokens, cost $0.01339
+2026-06-03 22:01:53,470 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:01:53,474 [INFO] utils.cost_tracker: LLM call: 4202 in / 85 out tokens, cost $0.01388
+2026-06-03 22:02:00,921 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:02:00,925 [INFO] utils.cost_tracker: LLM call: 4327 in / 78 out tokens, cost $0.01415
+2026-06-03 22:02:07,811 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:02:07,815 [INFO] utils.cost_tracker: LLM call: 4437 in / 77 out tokens, cost $0.01447
+2026-06-03 22:02:40,611 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-03 22:02:40,616 [INFO] utils.cost_tracker: LLM call: 4546 in / 1914 out tokens, cost $0.04235
+2026-06-03 22:02:40,683 [INFO] agents.interactive_explorer: Interactive exploration finished, output length=7019
+
+===== RESULT =====
+
+--- User Stories ---
+Now let me compile the exploration report based on all the pages I've visited.
+
+## PARABANK EXPLORATION REPORT
+
+### Exploration Summary
+- **Base URL**: https://parabank.parasoft.com/
+- **Maximum Depth**: 1 (as specified)
+- **Total Pages Visited**: 16
+
+---
+
+### Visited Pages and Interactive Elements
+
+#### 1. **Homepage**
+- **URL**: https://parabank.parasoft.com/parabank/index.htm
+- **Title/Headings**: Customer Login, Latest News
+- **Interactive Elements**:
+  - **Buttons**: Log In
+  - **Forms**: Login form with username and password fields
+  - **Links**: Register, About Us, Services, Products, L ...
+Total tokens: 2810960
+Total cost: $2.5502

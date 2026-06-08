@@ -1,0 +1,49 @@
+anthropic_api_key: "${ANTHROPIC_API_KEY}"
+model_name: "claude-sonnet-4-5-20250929"
+embedding_provider: "local"
+local_embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+chroma_persist_dir: "./chroma_db"
+collection_patterns: "test_patterns"
+collection_index: "test_index"
+framework_base_path: "playwright"
+max_retrieval_k: 5
+max_repair_attempts: 3
+export_history: false
+rate_limit_delay: 15
+
+playwright_mcp:
+  command: "npx"
+  args: ["-y", "@playwright/mcp@latest"]
+  env: {}
+
+# Ingestion defaults
+ingestion:
+  chunk_size: 1000          # max chars per chunk
+  include_docs: true        # automatically include .md, .txt files
+  include_bdd: true         # process .feature files
+
+logging:
+  level: "INFO"        # DEBUG, INFO, WARNING, ERROR
+  file: "logs/pipeline.log"
+
+# Environment profiles
+profiles:
+  parabank:
+    path: "playwright"
+    description: "Parabank test suite"
+    base_url: "https://parabank.parasoft.com"
+    credentials:
+      username: "standard_user"
+      password: "secret_password"
+  default:
+    path: "playwright"
+    description: "Default playground"
+
+# Cross‑browser settings (Chromium, Firefox, WebKit)
+browsers:
+  available: ["chromium"] # only chromium is supported for now
+  default: "chromium"
+
+# Regression detection
+regression:
+  baseline_dir: "./regression_baselines"

@@ -1,0 +1,14 @@
+{
+  "llm.input_tokens": 2730006,
+  "llm.output_tokens": 186797,
+  "llm.total_tokens": 2916803,
+  "llm.cost_dollars": 10.991972999999996,
+  "tests.created": 8,
+  "tests.executed": 9,
+  "coverage.checks": 3,
+  "ingestions.run": 4,
+  "rag.retrievals": 11,
+  "rag.hits": 11,
+  "explorations.run": 4,
+  "repairs.attempted": 3
+}
